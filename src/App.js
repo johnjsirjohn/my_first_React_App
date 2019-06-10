@@ -9,6 +9,7 @@ function App()
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Welcome to Codaisseur</h2>
+        <h2>Welcome to Codaisseur</h2>
         <p>
           Hello World!
         </p>
