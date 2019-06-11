@@ -5,32 +5,35 @@ import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title';
 import LightSwitch from './components/LightSwitch';
+import User from './components/User';
 
-// function App() {
-class App extends Component {
+// function App() {}
+class App extends React.Component {
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <h2>Welcome to Codaisseur</h2>
-          <p>Hello World!</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
         <main>
-          <Title content="Some Simple Title" />
-          <LightSwitch />
+
+          <div>
+            <UserBoard />
+
+            <div>
+              <User username={'John'} />
+              <User username={'Joe'} />
+              <User username={'Jane'} />
+
+            </div>
+          </div>
         </main>
       </div>
     );
+  }
+}
+
+class UserBoard extends React.Component {
+  render () {
+    return <h1>User Board</h1>;
   }
 }
 
